@@ -5,6 +5,14 @@ reproduzierbaren Auswertung kontinuierlicher Rotoskopie-Alphamasken. Sie
 vergleicht `roto_raw` und `roto_corrected` frameweise mit der manuellen Ground
 Truth `manual` und erzeugt deterministische CSV-, JSON-, TXT- und PNG-Ergebnisse.
 
+## Aktueller Stand
+
+- Programmversion: `2.2.1`
+- Ergebnisschema: `2.0`
+- Plattform: Windows
+- Unterstützte Python-Versionen: 3.11 bis 3.13
+- Repository: [github.com/xanoahax/RotoMaskAnalyzer](https://github.com/xanoahax/RotoMaskAnalyzer)
+
 ## Eingabeprojekt
 
 ```text
@@ -132,10 +140,12 @@ clip_id;frame_count;raw_mean_soft_iou;corrected_mean_soft_iou;mean_soft_iou_impr
 
 ## Entwicklungsumgebung
 
-Voraussetzung: Windows und Python 3.11 bis 3.13. Der reproduzierte Build nutzt
+Voraussetzung: Windows, Git und Python 3.11 bis 3.13. Der geprüfte Build nutzt
 Python 3.13.
 
 ```powershell
+git clone https://github.com/xanoahax/RotoMaskAnalyzer.git
+Set-Location RotoMaskAnalyzer
 py -3.13 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install --upgrade pip
 .\.venv\Scripts\python.exe -m pip install -e '.[dev]'
