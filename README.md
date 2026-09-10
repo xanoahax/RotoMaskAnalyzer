@@ -5,6 +5,9 @@ reproduzierbaren Auswertung kontinuierlicher Rotoskopie-Alphamasken. Sie
 vergleicht `roto_raw` und `roto_corrected` frameweise mit der manuellen Ground
 Truth `manual` und erzeugt deterministische CSV-, JSON-, TXT- und PNG-Ergebnisse.
 
+> **Entwicklungshinweis:** Dieses Programm wurde mithilfe des **CODEX Coding Agent
+> von OpenAI** entwickelt.
+
 ## Aktueller Stand
 
 - Programmversion: `2.2.1`
