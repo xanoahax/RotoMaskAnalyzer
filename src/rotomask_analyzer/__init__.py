@@ -1,0 +1,1 @@
+"""RotoMaskAnalyzer application package."""
